@@ -11,7 +11,8 @@
         "classnamespace": "box",
         "rect": [ 1608.0, -453.0, 2301.0, 1213.0 ],
         "openinpresentation": 1,
-        "showontab": 1,
+        "showrootpatcherontab": 0,
+        "showontab": 0,
         "boxes": [
             {
                 "box": {
@@ -29,7 +30,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 1608.0, -427.0, 2301.0, 1187.0 ],
+                        "rect": [ 0.0, 26.0, 2301.0, 1187.0 ],
                         "showontab": 1,
                         "boxes": [
                             {
@@ -92,7 +93,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 4369.676824808121, 78.19696354866028, 636.9565095901489, 33.0 ],
-                                    "presentation_linecount": 4,
                                     "text": "The systems allows to reinject the selected and unselected files, exporte to their new folders, in the analysis pipeline. When this happens, the files are automatically loaded in the analysis module, ready to be reanalized "
                                 }
                             },
@@ -161,7 +161,7 @@
                                     "lockeddragscroll": 0,
                                     "lockedsize": 0,
                                     "maxclass": "bpatcher",
-                                    "name": "Tool_2_V5.maxpat",
+                                    "name": "Tool_2_V6.maxpat",
                                     "numinlets": 0,
                                     "numoutlets": 0,
                                     "offset": [ 0.0, 0.0 ],
@@ -193,9 +193,30 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 0.0, 26.0, 2301.0, 1187.0 ],
+                        "rect": [ 1608.0, -427.0, 2301.0, 1187.0 ],
                         "showontab": 1,
                         "boxes": [
+                            {
+                                "box": {
+                                    "bgcolor": [ 1.0, 0.788235, 0.470588, 1.0 ],
+                                    "fontname": "Arial Bold",
+                                    "hint": "",
+                                    "id": "obj-16",
+                                    "ignoreclick": 1,
+                                    "legacytextcolor": 1,
+                                    "maxclass": "textbutton",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "", "int" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 791.0, 525.0, 20.0, 20.0 ],
+                                    "presentation": 1,
+                                    "presentation_rect": [ 791.0, 525.0, 20.0, 20.0 ],
+                                    "rounded": 60.0,
+                                    "text": "1",
+                                    "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
+                                }
+                            },
                             {
                                 "box": {
                                     "bgcolor": [ 1.0, 0.788235, 0.470588, 1.0 ],
@@ -568,8 +589,8 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 4354.545070409775, 69.69696354866028, 325.0, 20.0 ],
-                                    "text": "Load a file from standardized dataset or load from disk"
+                                    "patching_rect": [ 4354.545070409775, 69.69696354866028, 397.0, 20.0 ],
+                                    "text": "Load a file from standardized dataset, from raw dataset  or load from disk"
                                 }
                             },
                             {
@@ -606,7 +627,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 545.2054398059845, 1006.8492418527603, 20.0, 20.0 ],
+                                    "patching_rect": [ 635.0, 1005.0, 20.0, 20.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 230.0, 232.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
@@ -658,7 +679,7 @@
                                     "lockeddragscroll": 0,
                                     "lockedsize": 0,
                                     "maxclass": "bpatcher",
-                                    "name": "Tool_2_V5.maxpat",
+                                    "name": "Tool_2_V6.maxpat",
                                     "numinlets": 0,
                                     "numoutlets": 0,
                                     "offset": [ 0.0, 0.0 ],
@@ -976,7 +997,7 @@
                                     "lockeddragscroll": 0,
                                     "lockedsize": 0,
                                     "maxclass": "bpatcher",
-                                    "name": "Tool_2_V5.maxpat",
+                                    "name": "Tool_2_V6.maxpat",
                                     "numinlets": 0,
                                     "numoutlets": 0,
                                     "offset": [ 0.0, 0.0 ],
@@ -1507,7 +1528,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 108.0, 1204.75, 204.0, 20.0 ],
-                                    "presentation_linecount": 2,
                                     "text": "Define the processing mode: Manual"
                                 }
                             },
@@ -1592,7 +1612,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 74.61538887023926, 40.76923179626465, 713.0, 47.0 ],
-                                    "presentation_linecount": 2,
                                     "text": "Use Case 2: Preprocessing in Manual mode"
                                 }
                             },
@@ -1608,7 +1627,7 @@
                                     "lockeddragscroll": 0,
                                     "lockedsize": 0,
                                     "maxclass": "bpatcher",
-                                    "name": "Tool_2_V5.maxpat",
+                                    "name": "Tool_2_V6.maxpat",
                                     "numinlets": 0,
                                     "numoutlets": 0,
                                     "offset": [ 0.0, 0.0 ],
@@ -2134,7 +2153,7 @@
                                     "lockeddragscroll": 0,
                                     "lockedsize": 0,
                                     "maxclass": "bpatcher",
-                                    "name": "Tool_2_V5.maxpat",
+                                    "name": "Tool_2_V6.maxpat",
                                     "numinlets": 0,
                                     "numoutlets": 0,
                                     "offset": [ 0.0, 0.0 ],
@@ -2452,7 +2471,7 @@
                                     "lockeddragscroll": 0,
                                     "lockedsize": 0,
                                     "maxclass": "bpatcher",
-                                    "name": "Tool_2_V5.maxpat",
+                                    "name": "Tool_2_V6.maxpat",
                                     "numinlets": 0,
                                     "numoutlets": 0,
                                     "offset": [ 0.0, 0.0 ],
